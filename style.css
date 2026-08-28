@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Futura;
+  src: url("./fonts/FuturaLT.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  place-self: center;
+  font-family: futura, Courier, monospace;
+  color: rgb(35, 35, 35);
+}
+body {
+  height: 50vh;
+  background-color: beige;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20vh;
+  justify-content: space-around;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2rem;
+}
+li {
+  list-style: none;
+}
