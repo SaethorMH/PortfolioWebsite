@@ -38,8 +38,6 @@ html {
 body {
   background-image: linear-gradient(#272522, #181716);
   background-size: contain;
-  max-width: 400px;
-  border: orange dashed 4px;
   place-self: center;
   place-items: center;
 
@@ -505,4 +503,98 @@ dialog::backdrop {
   margin-right: 0.5rem;
 
   color: white;
+}
+
+@media (max-width: 600px) {
+  body {
+    max-width: 100%;
+    width: 100%;
+    border: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  header {
+    margin: 0.5rem;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+    padding: 0.75rem;
+  }
+
+  main {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .container {
+    flex: 0 0 calc(95% - 1rem);
+    width: calc(90% - 1rem);
+    box-sizing: border-box;
+    scroll-snap-align: start;
+    height: calc(95vh - 4rem);
+    margin: 0.5rem;
+    padding: 0.75rem;
+  }
+
+  li {
+    margin: 0.6rem;
+    padding: 0.75rem;
+    height: 8.5rem;
+  }
+
+  .createTask {
+    height: 3rem;
+    font-size: 2rem;
+  }
+
+  fieldset {
+    margin: 0.6rem;
+  }
+
+  fieldset input[type="text"] {
+    font-size: 1.5rem;
+    height: 1.8rem;
+  }
+
+  fieldset select {
+    height: 2.5rem;
+    width: 7.5rem;
+    font-size: 1rem;
+  }
+
+  fieldset #outdoorCheck {
+    height: 3.2rem;
+    width: 6.4rem;
+  }
+
+  dialog {
+    top: 15%;
+    left: 7.5vw;
+    width: 85vw;
+    height: auto;
+    padding: 1.5rem 0;
+  }
+
+  .dbtn {
+    font-size: 1.4rem;
+    height: 3rem;
+    width: 40%;
+    margin: 1rem;
+  }
+
+  .completedSticker {
+    width: 10rem;
+    margin-right: -1rem;
+    font-size: 0.85rem;
+  }
+
+  #statsContainer {
+    margin-top: 2rem;
+  }
 }
