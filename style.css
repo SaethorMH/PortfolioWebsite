@@ -1,3 +1,7 @@
+:root {
+  --blackBorder: black 2px solid;
+}
+
 @font-face {
   font-family: Futura;
   src: url("./fonts/FuturaLT.woff2");
@@ -11,12 +15,25 @@
   color: rgb(35, 35, 35);
 }
 body {
-  height: 50vh;
   background-color: beige;
+}
+header {
   display: flex;
-  flex-direction: column;
-  margin-top: 20vh;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100vw;
+  max-width: 1500px;
+  border: var(--blackBorder);
+}
+ol {
+  display: flex;
+  flex-direction: row;
+}
+main {
+  border: magenta 2px solid;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 h1 {
   font-size: 4rem;

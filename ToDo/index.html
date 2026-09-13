@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do App</title>
+    <script type="module" src="js.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c6e423c873.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./outdoor pakke/png/snowshowersandthunder_polartwilight.png"
+      type="image/x-icon"
+    />
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap"
+      rel="stylesheet"
+    /> -->
+  </head>
+
+  <body>
+    <header>
+      <h1>To-Do List</h1>
+    </header>
+    <main>
+      <div id="todoContainer" class="container">
+        <div id="filterSortContainer">
+          <select name="filter" id="filter">
+            <option value="">All</option>
+            <option value="Task">Tasks</option>
+            <option value="Homework">Homework</option>
+            <option value="Chore">Chores</option>
+            <option value="Deadline">Deadline</option>
+            <option value="Outdoors">Outdoors</option>
+            <option value="Indoors">Indoors</option>
+          </select>
+          <select name="sort" id="sort">
+            <option value="">Recent</option>
+            <option value="Date">Closest Deadline</option>
+            <option value="DateDec">Furthest Deadline</option>
+            <option value="a-z">Alphabetical (A-Z)</option>
+            <option value="z-a">Alphabetical (Z-A)</option>
+          </select>
+        </div>
+        <ul id="toDoingContainer"></ul>
+      </div>
+
+      <div id="createContainer" class="container">
+        <button class="createTask"><i class="fa-solid fa-plus"></i></button>
+        <form id="writingTask"></form>
+        <!-- <fieldset>
+        <legend>New Task</legend>
+        <input type="text" class="taskText" name="taskText" />
+        <input type="checkbox" class="outdoorCheck" name="outdoorCheck" />
+        <input type="date" name="date" id="" />
+      </fieldset> -->
+      </div>
+      <div id="categories" class="container">
+        <button class="accordion">Done Tasks</button>
+        <ul class="panel" id="toDoneContainer"></ul>
+        <div id="statsContainer">
+          <h2>Statistics</h2>
+          <p>Tasks Completed: <span id="completedStat"></span></p>
+          <p>Tasks yet to do: <span id="todoStat"></span></p>
+          <br />
+          <h3>Percentages:</h3>
+          <div id="categorieStat">
+            <div>
+              <p>
+                Uncategoriezed:<span id="unStat" class="catStat Darker"></span>
+              </p>
+            </div>
+            <div>
+              <p>
+                Homework:<span id="homeStat" class="catStat Homework"></span>
+              </p>
+            </div>
+            <div>
+              <p>Task:<span id="taskStat" class="catStat Task"></span></p>
+            </div>
+            <div>
+              <p>Chore:<span id="choreStat" class="catStat Chore"></span></p>
+            </div>
+            <div>
+              <p>
+                Deadline:<span id="deadStat" class="catStat Deadline"></span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Sæthór M. Hjálmarsson 2026</p>
+    </footer>
+  </body>
+</html>

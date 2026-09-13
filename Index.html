@@ -7,26 +7,75 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h2>This is the temporary front page for the web portfolio of</h2>
-    <h1>Sæþór Máni Hjálmarsson</h1>
-    <div>
-        <p>Here are some ways to reach me in the mean-time:</p>
-    <ul>
-      <li>
-        <a href=https://www.linkedin.com/in/saethormh/" target="_blank"
-          >LinkedIn</a
-        >
-      </li>
-      <li>
-        <a href="https://github.com/SaethorMH" target="_blank"
-          >Github</a
-        >
-      </li>
+    <header>
+      <div id="logoContainer"><a href="./index.html">LOGO</a></div>
+      <nav>
+        <ol>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./works.html">Works</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ol>
+      </nav>
+      <select name="colorMode" id="colorMode">
+        <option value="lightMode">Light</option>
+        <option value="darkMode">dark</option>
+      </select>
+      <select name="lanuage" id="languageDD">
+        <option value="en">&#127468;&#127463;</option>
+        <option value="da">&#127465;&#127472;</option>
+      </select>
+    </header>
+    <main>
+      <section id="heroSection">
+        <div id="hTextContainer">
+          <h1>Sæþór Máni Hjálmarsson</h1>
+          <h2>"Taking Caffine and Making Digital Designs"</h2>
+        </div>
 
-      <li>Phone number: +45 41592872</li>
-      <li>Email: contact@smhdesign.dk</li>
-    </ul>
-    </div>
-    
+        <img src="./heroImage.webp" alt="Image of Saethor" />
+      </section>
+
+      <section id="skillsSection">
+        <h2>Skills</h2>
+
+        <ul>
+          <li class="skillLi">
+            <h3>HTML, CSS & Javascript</h3>
+            <p>I can use HTML, CSS and Javascript to build websites.</p>
+          </li>
+          <li class="skillLi">
+            <h3>Adobe Package</h3>
+            <p>Photoshop, Illustrator</p>
+          </li>
+          <li class="skillLi">
+            <h3>Blender</h3>
+            <p>
+              I can model and texture 3d-objects in Blender also I have used
+              Blender to make still graphics.
+            </p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>
+        smhdesign.dk is a website created by and for Sæþór Máni Hjálmarsson<br />
+        This is build <span id="buildNumber"></span>
+      </p>
+      <div>
+        <p>Here are some ways to reach me:</p>
+        <ul>
+          <li>Email: contact@smhdesign.dk</li>
+          <li>
+            <a href="https://www.linkedin.com/in/saethormh/" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/SaethorMH" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
